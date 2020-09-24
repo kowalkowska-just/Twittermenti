@@ -6,12 +6,14 @@
 //
 
 import UIKit
+import SwifteriOS
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var sentimentLabel: UILabel!
     @IBOutlet weak var textField: UITextField!
     
+    let swifter = Swifter(consumerKey: SecretsKeyParse.getStringValue(forKey: "twitterConsumerKey"), consumerSecret: SecretsKeyParse.getStringValue(forKey: "twitterConsumerSecret"))
     
     override func viewDidLoad() {
         super.viewDidLoad()
