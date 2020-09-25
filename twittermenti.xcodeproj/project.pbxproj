@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		D1453B6A251BF4BA006DF839 /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1453B60251BF48E006DF839 /* SwifteriOS.framework */; };
 		D1453B6B251BF4BA006DF839 /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1453B60251BF48E006DF839 /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D1453B70251BF554006DF839 /* SecretsKey.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1453B6F251BF554006DF839 /* SecretsKey.plist */; };
 		D1453B74251C0175006DF839 /* SecretsKeyParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1453B73251C0175006DF839 /* SecretsKeyParser.swift */; };
+		D1453B7A251DF79F006DF839 /* SecretsKey.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1453B79251DF79F006DF839 /* SecretsKey.plist */; };
 		D1B4D3BB251A93210007A3F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B4D3BA251A93210007A3F9 /* AppDelegate.swift */; };
 		D1B4D3BD251A93210007A3F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B4D3BC251A93210007A3F9 /* SceneDelegate.swift */; };
 		D1B4D3BF251A93210007A3F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B4D3BE251A93210007A3F9 /* ViewController.swift */; };
@@ -89,8 +89,8 @@
 
 /* Begin PBXFileReference section */
 		D1453B57251BF48E006DF839 /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = ../Swifter/Swifter.xcodeproj; sourceTree = "<group>"; };
-		D1453B6F251BF554006DF839 /* SecretsKey.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SecretsKey.plist; sourceTree = "<group>"; };
 		D1453B73251C0175006DF839 /* SecretsKeyParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretsKeyParser.swift; sourceTree = "<group>"; };
+		D1453B79251DF79F006DF839 /* SecretsKey.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SecretsKey.plist; sourceTree = "<group>"; };
 		D1B4D3B7251A93210007A3F9 /* twittermenti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = twittermenti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1B4D3BA251A93210007A3F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1B4D3BC251A93210007A3F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -184,8 +184,8 @@
 				D1B4D3C3251A93220007A3F9 /* Assets.xcassets */,
 				D1B4D3C5251A93220007A3F9 /* LaunchScreen.storyboard */,
 				D1B4D3C8251A93220007A3F9 /* Info.plist */,
-				D1453B6F251BF554006DF839 /* SecretsKey.plist */,
 				D1453B73251C0175006DF839 /* SecretsKeyParser.swift */,
+				D1453B79251DF79F006DF839 /* SecretsKey.plist */,
 			);
 			path = twittermenti;
 			sourceTree = "<group>";
@@ -356,7 +356,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1453B70251BF554006DF839 /* SecretsKey.plist in Resources */,
+				D1453B7A251DF79F006DF839 /* SecretsKey.plist in Resources */,
 				D1B4D3C7251A93220007A3F9 /* LaunchScreen.storyboard in Resources */,
 				D1B4D3C4251A93220007A3F9 /* Assets.xcassets in Resources */,
 				D1B4D3C2251A93210007A3F9 /* Main.storyboard in Resources */,
