@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        swifter.searchTweet(using: "@Apple") { (results, metadata) in
+        swifter.searchTweet(using: "@Apple", lang: "en", count: 100, tweetMode: .extended) { (results, metadata) in
             print(results)
         } failure: { (error) in
             print("There was an error with Twitter API request, \(error)")
