@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SecretsKeyParse {
+struct SecretsKeyParser {
     
     static func getStringValue(forKey key: String) -> String {
         guard let path = Bundle.main.path(forResource: "SecretsKey", ofType: "plist") else {
@@ -22,6 +22,8 @@ struct SecretsKeyParse {
         }
         
         let value = plist[key]
+        
+        print(value!)
         return value!
         
 

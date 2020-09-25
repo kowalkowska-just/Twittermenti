@@ -13,11 +13,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var sentimentLabel: UILabel!
     @IBOutlet weak var textField: UITextField!
     
-    let swifter = Swifter(consumerKey: SecretsKeyParse.getStringValue(forKey: "twitterConsumerKey"), consumerSecret: SecretsKeyParse.getStringValue(forKey: "twitterConsumerSecret"))
+    let swifter = Swifter(consumerKey: SecretsKeyParser.getStringValue(forKey: "twitterConsumerKey"), consumerSecret: SecretsKeyParser.getStringValue(forKey: "twitterConsumerSecret"))
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        swifter.searchTweet(using: "@Apple") { (results, metadata) in
+            print(results)
+        } failure: { (error) in
+            print("There was an error with Twitter API request, \(error)")
+        }
+        
     }
 
     @IBAction func predictPressed(_ sender: UIButton) {
