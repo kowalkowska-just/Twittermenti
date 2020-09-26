@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C8BA4506665BF0B4BE1F89E /* Pods_twittermenti.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE0F500D8F1EA09D90D8B52B /* Pods_twittermenti.framework */; };
 		D1453B6A251BF4BA006DF839 /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1453B60251BF48E006DF839 /* SwifteriOS.framework */; };
 		D1453B6B251BF4BA006DF839 /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1453B60251BF48E006DF839 /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D1453B74251C0175006DF839 /* SecretsKeyParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1453B73251C0175006DF839 /* SecretsKeyParser.swift */; };
@@ -89,6 +90,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		236C09B72FA40620ECEF431A /* Pods-twittermenti.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twittermenti.debug.xcconfig"; path = "Target Support Files/Pods-twittermenti/Pods-twittermenti.debug.xcconfig"; sourceTree = "<group>"; };
+		950F3F3C22E2ED0F5DC16A7B /* Pods-twittermenti.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twittermenti.release.xcconfig"; path = "Target Support Files/Pods-twittermenti/Pods-twittermenti.release.xcconfig"; sourceTree = "<group>"; };
+		AE0F500D8F1EA09D90D8B52B /* Pods_twittermenti.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_twittermenti.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1453B57251BF48E006DF839 /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = ../Swifter/Swifter.xcodeproj; sourceTree = "<group>"; };
 		D1453B73251C0175006DF839 /* SecretsKeyParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretsKeyParser.swift; sourceTree = "<group>"; };
 		D1453B79251DF79F006DF839 /* SecretsKey.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SecretsKey.plist; sourceTree = "<group>"; };
@@ -115,6 +119,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1453B6A251BF4BA006DF839 /* SwifteriOS.framework in Frameworks */,
+				3C8BA4506665BF0B4BE1F89E /* Pods_twittermenti.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +140,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4CEB4CE8740113DDB2D9ED39 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				236C09B72FA40620ECEF431A /* Pods-twittermenti.debug.xcconfig */,
+				950F3F3C22E2ED0F5DC16A7B /* Pods-twittermenti.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D1453B58251BF48E006DF839 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +165,7 @@
 		D1453B69251BF4BA006DF839 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AE0F500D8F1EA09D90D8B52B /* Pods_twittermenti.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -163,6 +179,7 @@
 				D1B4D3DB251A93220007A3F9 /* twittermentiUITests */,
 				D1B4D3B8251A93210007A3F9 /* Products */,
 				D1453B69251BF4BA006DF839 /* Frameworks */,
+				4CEB4CE8740113DDB2D9ED39 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -218,10 +235,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1B4D3E1251A93220007A3F9 /* Build configuration list for PBXNativeTarget "twittermenti" */;
 			buildPhases = (
+				25C83EEC86E3A06B2E0CCB77 /* [CP] Check Pods Manifest.lock */,
 				D1B4D3B3251A93210007A3F9 /* Sources */,
 				D1B4D3B4251A93210007A3F9 /* Frameworks */,
 				D1B4D3B5251A93210007A3F9 /* Resources */,
 				D1453B6C251BF4BA006DF839 /* Embed Frameworks */,
+				E65C9FEA86E5810327CF82C1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -381,6 +400,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25C83EEC86E3A06B2E0CCB77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-twittermenti-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E65C9FEA86E5810327CF82C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-twittermenti/Pods-twittermenti-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-twittermenti/Pods-twittermenti-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-twittermenti/Pods-twittermenti-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D1B4D3B3251A93210007A3F9 /* Sources */ = {
@@ -564,6 +625,7 @@
 		};
 		D1B4D3E2251A93220007A3F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 236C09B72FA40620ECEF431A /* Pods-twittermenti.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -583,6 +645,7 @@
 		};
 		D1B4D3E3251A93220007A3F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 950F3F3C22E2ED0F5DC16A7B /* Pods-twittermenti.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
